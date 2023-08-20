@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("<h1>This is a home page</h1>")
+    return HttpResponse("<h1>This is a Home page of Mock Interview</h1>")
