@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffeee;
+    /* background-color: rgb(207, 241, 241); */
+}
+
+/* Navigation bar------------------ */
+.custom-nav{
+    margin: 15px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    position: sticky;
+    top: 15px;
+    z-index: 100;
+}
+.custom-nav-link{
+    display: flex;
+}
+.navbar-nav li{
+    margin: 0 5px;
+}
+.custom-nav-link div span{
+    margin: 0 5px;
+}
+/* Section 1 -------------------------- */
+
+.sec-1{
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.heading_sub{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    justify-content: center;
+}
+.head h1{
+    font-size: 90px;
+    font-weight:900;
+}
+.subhead p{
+    font-size: 20px;
+}
+
+/* Section 2 -------------------------------- */
+
+.sec-2-main{
+    /* margin: 20px; */
+    background-color: rgb(112, 255, 255);
+    /* border: 2px solid gray; */
+    /* border-radius: 10px; */
+}
+.sec-2-main hr, .upload-main hr{
+    width: 90%;
+    border: 1px solid black;
+}
+.sec-2-main h2{
+    font-weight: 800;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+}
+.sec-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.sec-2-content{
+    display: flex;
+    align-items: center;
+}
+.sec-2-content div h3{
+    font-weight: 600;
+    margin: 20px 0;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+.test h3{
+    font-weight: 600;
+}
+
+
+
+/* ----------------------------------------- */
+/* Signup form */
+
+.form-heading{
+    background-color: aqua;
+    margin: 0 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.form-heading h1{
+    text-align: center;
+    font-weight: 600px;
+    margin-top: 20px;
+}
+.signup-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.form div input{
+    padding: 7px 70px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.line{
+    border-left: 2px solid black;
+    height: 550px;
+    margin: 10px;
+}
+
+/* -------------------------------------------- */
+/* Login form */
+.line2{
+    border-left: 2px solid black;
+    height: 350px;
+    margin: 10px;
+}
+.form-heading2{
+    margin: 0 170px;
+}
+
+
+/* -------------------------------------------------- */
+/* Upload Page */
+.upload-main{
+    margin: 20px;
+    background-color: aqua;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.upload-main h1{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-content{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.upload-content-1{
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.upload-content-2{
+    font-size: 18px;
+    font-weight: 700;
+}
+.upload-img{
+    display: flex;
+}
+.upload-img span{
+    display: flex;
+    justify-content: center;
+}
+.upload-img span img{
+    margin: 0px 20px;
+}
+
+
+
+/* --------------------------------------------- */
+/* Responsive */
+
+@media only screen and (max-width: 600px){
+    .sec-1{
+        flex-direction: column-reverse;
+    }
+    .heading_sub{
+        margin: 0px 40px;
+    }
+    .head h1{
+        font-size: 70px;
+    }
+    .subhead p{
+        font-size: 17px;
+    }
+    .image img{
+        height: auto;
+        width: 100%;
+    }
+    /* -------------------------------------------- */
+
+    .sec-2{
+        flex-direction: column-reverse;
+    }
+    .sec-2-content{
+        flex-direction: column;
+    }
+    .sec-2-content div h3{
+        text-align: center;
+        font-size: 24px;
+    }
+    .sec-2-content div h5{
+        text-align: center;
+        align-items: center;
+        font-size: 17px;
+    }
+}
