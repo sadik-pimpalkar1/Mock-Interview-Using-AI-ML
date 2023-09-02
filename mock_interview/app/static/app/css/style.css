@@ -221,4 +221,24 @@ body{
         align-items: center;
         font-size: 17px;
     }
+    /* ------------------------------------------------- */
+    /* SignUp */
+
+    .form-heading{
+        margin: 0 20px;
+    }
+   .signup-form{
+        flex-direction: column;
+   } 
+   .line{
+        display: none;
+   }
+   .form div input{
+        padding: 10px;
+   }
+   /* ------------------------------------------------------ */
+   /* Login */
+   .line2{
+        display: none;
+   }
 }
