@@ -6,4 +6,13 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("<h1>This is a Home page of Mock Interview</h1>")
+    return render(request, 'app/index.html')
+
+def upload_resume(request):
+    return render(request, 'app/upload.html')
+
+def signup(request):
+    return render(request, 'app/signup.html')
+
+def login(request):
+    return render(request, 'app/login.html')

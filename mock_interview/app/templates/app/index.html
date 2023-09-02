@@ -1,0 +1,83 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'app/static/app/css/style.css' %}">
+{% endblock style %}
+
+{% block body_block %} 
+
+
+<!-- Section 1: Banner -->
+
+<section class="sec-1">
+    <div class="image">
+        <img src="{% static 'app/images/img1.png' %}" alt="Banner">
+    </div>
+    <div class="heading_sub">
+        <div class="head">
+            <h1>Mock Interview</h1>
+        </div>
+        <div class="subhead">
+            <p>Best Place to prepare for your interview to get a job.</p>
+        </div>
+        <div class="upload-btn">
+            <a href="{% url 'upload_resume' %}">
+                <button class="btn btn-warning">Upload Resume</button>
+            </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------------------- -->
+  <!-- Section 2: Info -->
+
+
+  <div class="sec-2-main">
+    <h2>How Does It Work?</h2>
+    <hr>
+    <section class="sec-2">
+
+        <div class="image">
+            <img src="{% static 'app/images/img3.png' %}" alt="">
+            <div class="test">
+                <h3>Start Your Test Now!</h3>
+                <a href="{% url 'upload_resume' %}">
+                    <button class="btn btn-warning">Upload Resume</button>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="sec-2-content">
+                <img src="{% static 'app/images/upload.png' %}" alt="">
+                <div>
+                    <h3>1. Upload Resume</h3>
+                    <h5>The first step is to upload your resume</h5>
+                </div>
+            </div>
+            <div class="sec-2-content">
+                <img src="{% static 'app/images/questions.png' %}" alt="">
+                <div>
+                    <h3>2. Give Mock Interview</h3>
+                    <h5>After uploading resume the AI scans resume and extracts the important keywords related to skills.</h5>
+                </div>
+                </div>
+            <div class="sec-2-content">
+                <img src="{% static 'app/images/accuracy.png' %}" alt="">
+                <div>
+                    <h3>3. Check Accuracy</h3>
+                    <h5>After giving the interview check your accuracy score and interview status</h5>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+  </div>
+
+{% endblock body_block %}
+
