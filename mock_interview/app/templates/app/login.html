@@ -1,0 +1,46 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %} Login {% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'app/static/app/css/style.css' %}">
+{% endblock style %}
+
+{% block body_block %} 
+
+
+<div class="form-heading form-heading2">
+    <h1>Login!</h1>
+    <section class="signup-form">
+            <div class="image">
+                <img src="{% static 'app/images/signup.png' %}" alt="SignUp Image">
+            </div>
+            <div class="line2"></div>
+            <div class="form-content">
+                <form action="" class="form">
+                    <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" placeholder="name@example.com">
+                    </div>
+
+                    <div>
+                    <label for="pass1">Password: </label>
+                    <input type="password" name="pass1" placeholder="Password">
+                    </div>
+
+                    <div>
+                        <h6>Don't have an account? <a href="{% url 'signup' %}">Sign Up!</a></h6>  
+                    </div>
+
+                    <div>
+                        <input type="submit" name="submit" placeholder="Submit" class="btn btn-success">
+                    </div>
+                </form>
+            </div>
+    </section>
+  </div>
+
+
+
+{% endblock body_block %}
