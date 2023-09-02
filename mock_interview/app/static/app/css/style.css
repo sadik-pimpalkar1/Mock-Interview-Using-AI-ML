@@ -241,4 +241,26 @@ body{
    .line2{
         display: none;
    }
+   /* --------------------------------------------------------- */
+   /* Upload Resume Page */
+   .upload{
+        flex-direction: column;
+   }
+   .upload-main h1{
+        font-size: 32px;
+   }
+   .upload-content-1, .upload-content-2{
+        font-size: 15px;
+        padding: 0 95px;
+   }
+   .upload-file{
+        display: flex;
+        margin-left: 70px;
+        align-items: center;
+        justify-content: center;
+   }
+   .upload-submit input{
+        display: flex;
+        margin-left: 17%;
+   }
 }
