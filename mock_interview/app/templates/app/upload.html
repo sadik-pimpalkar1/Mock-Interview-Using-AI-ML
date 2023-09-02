@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'app/static/app/css/style.css' %}">
+{% endblock style %}
+
+{% block body_block %} 
+
+
+<div class="upload-main">
+    <h1>Upload Resume</h1>
+    <hr>
+    <section class="upload">
+        <div class="image">
+            <img src="{% static 'app/images/img4.png' %}" alt="Upload Resume Image">
+        </div>
+        <div class="upload-content">
+            <p class="upload-content-1">By uploading your resume, AI scans the keywords related to skills from your resume and on the next page few questions will be generated related to the keywords extracted from your resume. You can even add more keywords from your side on next page.</p>
+            <p class="upload-content-2">Upload resume and hit submit to proceed further:</p>
+            <div class="upload-img">
+              <div class="upload-file">
+                <span class="material-symbols-outlined">
+                    <!-- upload_file -->
+                    <img src="{% static 'app/images/upload-icon1.png' %}" alt="">
+                </span>
+                <input type="file" name="resume" accept=".pdf" class="resume">
+              </div>
+            </div>
+            <div class="upload-submit my-3 mx-3">
+                <input type="submit" name="submit" class="btn btn-warning">
+            </div>
+        </div>
+    </section>
+  </div>
+
+
+
+{% endblock body_block %}
